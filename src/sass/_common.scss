@@ -1,5 +1,9 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body{
+	background-color: #f2f2f2ff;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -27,8 +31,12 @@
 }
 
 input {
+	padding: 10px 0;
+  display: flex;
+  margin: 0 auto;
   position: relative;
   width: 350px;
+  height: 40px;
   padding: 10px 10px;
   border: none;
   border-radius: 3px;
@@ -54,8 +62,8 @@ input {
 
   background-color: rgba(234, 66, 169, 0.223);
   cursor: pointer;
-  &:hover{
-	background-color: rgba(234, 66, 170, 0.367);
+  &:hover {
+    background-color: rgba(234, 66, 170, 0.367);
   }
 }
 
@@ -82,7 +90,7 @@ input {
   width: calc((100% - 60px) / 4);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 0px 2px rgba(0, 0, 0, 0.16);
-	 border-radius: 3px;
+  border-radius: 3px;
 }
 
 .info {
@@ -100,13 +108,31 @@ img {
   object-fit: cover;
 }
 
+.load {
+		display: flex;
+	justify-content: center;
+}
 .load-more {
-  width: 100px;
-  height: 30px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  width: 150px;
+  height: 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #7d0e50;
 
   color: #ffffff;
   cursor: pointer;
+  &:hover {
+    background-color: rgba(169, 16, 115, 0.932);
+}}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  display: none;
 }
